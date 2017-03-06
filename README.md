@@ -1,7 +1,7 @@
 # react-webpack2-boilerplate
-React + React-Router 3 boilerplate on Webpack2 
+React + React-Router 3 + Redux + Redux-saga boilerplate on Webpack2 with FULL hot reloading (include reducers and sagas)
 
-0) npm install
-1) run code: npm run dev
-2) run server: node server.js
-3) awesome!
+0. npm install
+1. run code: npm run dev
+2. run server: node server.js
+3. awesome!
