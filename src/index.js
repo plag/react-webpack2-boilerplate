@@ -6,12 +6,19 @@ import { AppContainer } from 'react-hot-loader';
 
 import Main from './components/Main';
 
-console.log('Main', Main);
+import reducers from './redux/reducers';
+
+import { createStore, applyMiddleware, compose } from 'redux';
+
+const store = createStore(
+  reducers,
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+);
 
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <Component store={ store }/>
     </AppContainer>,
     document.getElementById('root')
   );
@@ -24,6 +31,13 @@ if (module.hot) {
   module.hot.accept('./components/Main', () => {
     render(Main)
   });
+
+  module.hot.accept('./redux/reducers', () => {
+    const reducers = require('./redux/reducers').default;
+    return store.replaceReducer(reducers);
+  });
 }
+
+
 
 
