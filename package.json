@@ -23,6 +23,9 @@
     "express": "^4.15.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^3.0.2"
+    "react-redux": "^5.0.3",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-act": "^1.1.1"
   }
 }
