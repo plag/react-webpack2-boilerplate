@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": "server.js",
+    "server": "node server.js",
     "dev": "webpack-dev-server --progress"
   },
   "license": "MIT",
