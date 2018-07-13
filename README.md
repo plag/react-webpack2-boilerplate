@@ -1,3 +1,5 @@
+Warning! This repository is depricated. Use https://github.com/plag/react-webpack4-boilerplate instead.
+
 # react-webpack2-boilerplate
 React + React-Router 3 + Redux + Redux-saga boilerplate on Webpack2 with FULL hot reloading (include reducers and sagas)
 
